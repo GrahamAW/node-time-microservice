@@ -7,4 +7,4 @@ a string that the chrono library can parse.
 JSON is returned to the user with both the unix time stamp and natural language
 date.
 
-Link to running example: https://node-time-microservice-damxukccfi.now.sh/
+Link to running example: https://node-time-microservice-kthatyskde.now.sh/

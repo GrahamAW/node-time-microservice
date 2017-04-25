@@ -9,8 +9,8 @@ const app = express();
 
 // listen to get requests on any url
 app.get('*', (req, res) => {
-  // get the url, without the leading '/' and change all %20 to spaces
-  const dateString = req.url.slice(1).replace(/%20/g, ' ');
+  // get the url, without the leading '/'
+  const dateString = decodeURIComponent(req.url.slice(1));
   console.log('------');
   console.log(chalk.white('String from the url is: ') + chalk.yellow(dateString));
 
